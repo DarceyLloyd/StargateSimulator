@@ -1,0 +1,780 @@
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #000000;
+    /* background: url(../../images/bg.jpg) #000000; */
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+}
+
+
+#end {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+}
+#end .inner {
+    position: relative;
+    display: block;
+    width: 882px;
+    height: 499px;
+    margin: auto;
+    text-align: center;
+    /* border: 1px solid #FFCC00; */
+}
+#end .image {
+    position: relative;
+    display: block;
+    width: 882px;
+    height: 499px;
+    background: url(../../images/Sci-Fi-Collage-Large.jpg);
+}
+#end .who {
+    position: relative;
+    display: block;
+    width: 882px;
+    height: 30px;
+    margin: auto;
+}
+
+#stargate {
+    position: relative;
+    width: 100%;
+}
+
+#stargate .inner {
+    z-index: 100;
+    position: relative;
+    width: 512px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+#wormhole {
+    z-index: 300;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+#wormhole-overlay {
+    z-index: 301;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    opacity: 1;
+}
+
+
+
+
+
+#stargate .info-container {
+    z-index: 280;
+    position: relative;
+    top: 352px;
+    width: 512px;
+    height: 28px;
+    margin: 10px auto auto auto;
+    /*background: url(../../images/console_top.png);*/
+    /*background-repeat: no-repeat;*/
+    /* border: 1px solid RGBA(255,255,255,0.1); */
+}
+
+#stargate .info-container .txt {
+    position: relative;
+    display: block;
+    width: 512px;
+    padding: 20px 10px auto 10px;
+    text-shadow: 1px 1px 1px #000000;
+    font-size: 17px;
+    text-align: center;
+    color: #00FFFF;
+    text-shadow: 1px 1px 1px #000000;
+    /*background: RGBA(255,255,255,0.2);*/
+
+}
+
+
+
+
+#stargate .gate {
+    position: absolute;
+    z-index: 80;
+    width: 512px;
+    height: 512px;
+    background: url(../../images/gate.png);
+}
+
+#stargate .ring-container {
+    position: absolute;
+    z-index: 90;
+    width: 512px;
+    height: 512px;
+    overflow: hidden;
+}
+
+#stargate .ring {
+    width: 512px;
+    height: 512px;
+    background: url(../../images/ring.png);
+}
+
+#stargate .bg-container {
+    z-index: 20;
+    position: absolute;
+    width: 512px;
+    height: 512px;
+    overflow: hidden;
+}
+
+#stargate .logo {
+    position: absolute;
+    left: 107px;
+    top: 170px;
+    width: 300px;
+    height: 116px;
+    background: url(../../images/logo.png);
+}
+
+
+
+#stargate .water {
+    z-index: 40;
+    position: absolute;
+    width: 512px;
+    height: 512px;
+    /* overflow: hidden; */
+    opacity: 0;
+}
+
+#stargate .fill {
+    position: absolute;
+    z-index: 45;
+    width: 512px;
+    height: 512px;
+    /* overflow: hidden; */
+    background: #FFFFFF;
+    opacity: 0;
+}
+
+
+
+
+#stargate .overlay-container {
+    z-index: 50;
+    position: absolute;
+    width: 512px;
+    height: 512px;
+    overflow: hidden;
+}
+
+#stargate .sam {
+    position: absolute;
+    left: 100px;
+    top: 60px;
+    display: none;
+    width: 327px;
+    height: 402px;
+    background: url(../../images/sam.png);
+    opacity: 0;
+}
+
+#stargate .click-to-enter {
+    position: absolute;
+    left: 100px;
+    top: 236px;
+    display: none;
+    width: 327px;
+    font-size: 28px;
+    text-shadow: 1px 1px 1px #000000;
+    text-align: center;
+    opacity: 0;
+}
+
+
+
+#stargate .lock-container {
+    position: absolute;
+    z-index: 91;
+    width: 512px;
+    height: 512px;
+    /* overflow: hidden; */
+}
+
+#stargate .lock {
+    position: absolute;
+    width: 159px;
+    height: 58px;
+    /* overflow: hidden; */
+}
+
+#stargate .lock1 {
+    left: 172px;
+    top: -15px;
+    transform: rotate(0deg);
+}
+
+#stargate .lock2 {
+    left: 1px;
+    top: 60px;
+    transform: rotate(-46deg);
+}
+
+#stargate .lock3 {
+    left: 350px;
+    top: 60px;
+    transform: rotate(46deg);
+}
+
+#stargate .lock4 {
+    left: -65px;
+    top: 225px;
+    transform: rotate(-90deg);
+}
+
+#stargate .lock5 {
+    left: 416px;
+    top: 225px;
+    transform: rotate(90deg);
+}
+
+#stargate .lock6 {
+    left: -3px;
+    top: 387px;
+    transform: rotate(-132deg);
+}
+
+#stargate .lock7 {
+    left: 354px;
+    top: 387px;
+    transform: rotate(132deg);
+}
+
+#stargate .lock {
+    position: absolute;
+}
+
+#stargate .lock .center-on {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 165px;
+    height: 64px;
+    background: url(../../images/lock_center_on.png);
+    opacity: 0;
+}
+
+#stargate .lock .center-off {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 165px;
+    height: 64px;
+    background: url(../../images/lock_center_off.png);
+}
+
+#stargate .lock .base-on {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 165px;
+    height: 64px;
+    background: url(../../images/lock_base_on.png);
+    opacity: 0;
+}
+
+#stargate .lock .base-off {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 165px;
+    height: 64px;
+    background: url(../../images/lock_base_off.png);
+}
+
+#stargate .dhd {
+    z-index: 120;
+    position: relative;
+    width: 512px;
+}
+
+#stargate .dhd .bg {
+    position: relative;
+    top: 380px;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background: url(../../images/dhd_blank.png);
+}
+
+#stargate .dhd .btn-start {
+    z-index: 505;
+    position: relative;
+    top: 173px;
+    width: 113px;
+    height: 113px;
+    margin: auto;
+    background: url(../../images/dhd_btn_up.png);
+    cursor: pointer;
+}
+
+#stargate .dhd .btn-start:hover {
+    background: url(../../images/dhd_btn_down.png);
+}
+
+#stargate .dhd .dhd-btn {
+    z-index: 103;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+#stargate .dhd .btn1 {
+    position: absolute;
+    left: 199px;
+    top: 382px;
+    background: url(../../images/dhd/up/c01.png);
+    width: 57px;
+    height: 55px;
+}
+
+#stargate .dhd .btn2 {
+    position: absolute;
+    left: 256px;
+    top: 382px;
+    background: url(../../images/dhd/up/c02.png);
+    width: 56px;
+    height: 55px;
+}
+
+#stargate .dhd .btn3 {
+    position: absolute;
+    left: 295px;
+    top: 393px;
+    background: url(../../images/dhd/up/c03.png);
+    width: 66px;
+    height: 66px;
+}
+
+#stargate .dhd .btn4 {
+    position: absolute;
+    left: 328px;
+    top: 426px;
+    background: url(../../images/dhd/up/c04.png);
+    width: 65px;
+    height: 66px;
+}
+
+#stargate .dhd .btn5 {
+    position: absolute;
+    left: 350px;
+    top: 474px;
+    background: url(../../images/dhd/up/c05.png);
+    width: 55px;
+    height: 57px;
+}
+
+#stargate .dhd .btn6 {
+    position: absolute;
+    left: 349px;
+    top: 530px;
+    background: url(../../images/dhd/up/c06.png);
+    width: 56px;
+    height: 60px;
+}
+
+#stargate .dhd .btn7 {
+    position: absolute;
+    left: 328px;
+    top: 572px;
+    background: url(../../images/dhd/up/c07.png);
+    width: 64px;
+    height: 63px;
+}
+
+#stargate .dhd .btn8 {
+    position: absolute;
+    left: 294px;
+    top: 603px;
+    background: url(../../images/dhd/up/c08.png);
+    width: 67px;
+    height: 66px;
+}
+
+#stargate .dhd .btn9 {
+    position: absolute;
+    left: 256px;
+    top: 625px;
+    background: url(../../images/dhd/up/c09.png);
+    width: 55px;
+    height: 54px;
+}
+
+#stargate .dhd .btn10 {
+    position: absolute;
+    left: 199px;
+    top: 624px;
+    background: url(../../images/dhd/up/c10.png);
+    width: 57px;
+    height: 55px;
+}
+
+#stargate .dhd .btn11 {
+    position: absolute;
+    left: 151px;
+    top: 602px;
+    background: url(../../images/dhd/up/c11.png);
+    width: 65px;
+    height: 65px;
+}
+
+#stargate .dhd .btn12 {
+    position: absolute;
+    left: 119px;
+    top: 570px;
+    background: url(../../images/dhd/up/c12.png);
+    width: 65px;
+    height: 65px;
+}
+
+#stargate .dhd .btn13 {
+    position: absolute;
+    left: 107px;
+    top: 530px;
+    background: url(../../images/dhd/up/c13.png);
+    width: 55px;
+    height: 58px;
+}
+
+#stargate .dhd .btn14 {
+    position: absolute;
+    left: 107px;
+    top: 471px;
+    background: url(../../images/dhd/up/c14.png);
+    width: 56px;
+    height: 59px;
+}
+
+#stargate .dhd .btn15 {
+    position: absolute;
+    left: 119px;
+    top: 425px;
+    background: url(../../images/dhd/up/c15.png);
+    width: 65px;
+    height: 64px;
+}
+
+#stargate .dhd .btn16 {
+    position: absolute;
+    left: 151px;
+    top: 393px;
+    background: url(../../images/dhd/up/c16.png);
+    width: 66px;
+    height: 66px;
+}
+
+#stargate .dhd .btn17 {
+    position: absolute;
+    left: 220px;
+    top: 435px;
+    background: url(../../images/dhd/up/c17.png);
+    width: 36px;
+    height: 43px;
+}
+
+#stargate .dhd .btn18 {
+    position: absolute;
+    left: 256px;
+    top: 435px;
+    background: url(../../images/dhd/up/c18.png);
+    width: 35px;
+    height: 43px;
+}
+
+#stargate .dhd .btn19 {
+    position: absolute;
+    left: 277px;
+    top: 443px;
+    background: url(../../images/dhd/up/c19.png);
+    width: 46px;
+    height: 47px;
+}
+
+#stargate .dhd .btn20 {
+    position: absolute;
+    left: 296px;
+    top: 464px;
+    background: url(../../images/dhd/up/c20.png);
+    width: 47px;
+    height: 44px;
+}
+
+#stargate .dhd .btn21 {
+    position: absolute;
+    left: 308px;
+    top: 494px;
+    background: url(../../images/dhd/up/c21.png);
+    width: 43px;
+    height: 36px;
+}
+
+#stargate .dhd .btn22 {
+    position: absolute;
+    left: 308px;
+    top: 530px;
+    background: url(../../images/dhd/up/c22.png);
+    width: 43px;
+    height: 38px;
+}
+
+#stargate .dhd .btn23 {
+    position: absolute;
+    left: 297px;
+    top: 554px;
+    background: url(../../images/dhd/up/c23.png);
+    width: 45px;
+    height: 42px;
+}
+
+#stargate .dhd .btn24 {
+    position: absolute;
+    left: 277px;
+    top: 571px;
+    background: url(../../images/dhd/up/c24.png);
+    width: 45px;
+    height: 47px;
+}
+
+#stargate .dhd .btn25 {
+    position: absolute;
+    left: 256px;
+    top: 583px;
+    background: url(../../images/dhd/up/c25.png);
+    width: 34px;
+    height: 42px;
+}
+
+#stargate .dhd .btn26 {
+    position: absolute;
+    left: 220px;
+    top: 583px;
+    background: url(../../images/dhd/up/c26.png);
+    width: 36px;
+    height: 42px;
+}
+
+#stargate .dhd .btn27 {
+    position: absolute;
+    left: 190px;
+    top: 571px;
+    background: url(../../images/dhd/up/c27.png);
+    width: 44px;
+    height: 46px;
+}
+
+#stargate .dhd .btn28 {
+    position: absolute;
+    left: 169px;
+    top: 552px;
+    background: url(../../images/dhd/up/c28.png);
+    width: 47px;
+    height: 45px;
+}
+
+#stargate .dhd .btn29 {
+    position: absolute;
+    left: 161px;
+    top: 530px;
+    background: url(../../images/dhd/up/c29.png);
+    width: 43px;
+    height: 37px;
+}
+
+#stargate .dhd .btn30 {
+    position: absolute;
+    left: 161px;
+    top: 493px;
+    background: url(../../images/dhd/up/c30.png);
+    width: 43px;
+    height: 37px;
+}
+
+#stargate .dhd .btn31 {
+    position: absolute;
+    left: 170px;
+    top: 464px;
+    background: url(../../images/dhd/up/c31.png);
+    width: 46px;
+    height: 44px;
+}
+
+#stargate .dhd .btn32 {
+    position: absolute;
+    left: 190px;
+    top: 443px;
+    background: url(../../images/dhd/up/c32.png);
+    width: 44px;
+    height: 47px;
+}
+
+#stargate .dhd .btn1:hover {
+    background: url(../../images/dhd/down/c01.png);
+}
+
+#stargate .dhd .btn2:hover {
+    background: url(../../images/dhd/down/c02.png);
+}
+
+#stargate .dhd .btn3:hover {
+    background: url(../../images/dhd/down/c03.png);
+}
+
+#stargate .dhd .btn4:hover {
+    background: url(../../images/dhd/down/c04.png);
+}
+
+#stargate .dhd .btn5:hover {
+    background: url(../../images/dhd/down/c05.png);
+}
+
+#stargate .dhd .btn6:hover {
+    background: url(../../images/dhd/down/c06.png);
+}
+
+#stargate .dhd .btn7:hover {
+    background: url(../../images/dhd/down/c07.png);
+}
+
+#stargate .dhd .btn8:hover {
+    background: url(../../images/dhd/down/c08.png);
+}
+
+#stargate .dhd .btn9:hover {
+    background: url(../../images/dhd/down/c09.png);
+}
+
+#stargate .dhd .btn10:hover {
+    background: url(../../images/dhd/down/c10.png);
+}
+
+#stargate .dhd .btn11:hover {
+    background: url(../../images/dhd/down/c11.png);
+}
+
+#stargate .dhd .btn12:hover {
+    background: url(../../images/dhd/down/c12.png);
+}
+
+#stargate .dhd .btn13:hover {
+    background: url(../../images/dhd/down/c13.png);
+}
+
+#stargate .dhd .btn14:hover {
+    background: url(../../images/dhd/down/c14.png);
+}
+
+#stargate .dhd .btn15:hover {
+    background: url(../../images/dhd/down/c15.png);
+}
+
+#stargate .dhd .btn16:hover {
+    background: url(../../images/dhd/down/c16.png);
+}
+
+#stargate .dhd .btn17:hover {
+    background: url(../../images/dhd/down/c17.png);
+}
+
+#stargate .dhd .btn18:hover {
+    background: url(../../images/dhd/down/c18.png);
+}
+
+#stargate .dhd .btn19:hover {
+    background: url(../../images/dhd/down/c19.png);
+}
+
+#stargate .dhd .btn20:hover {
+    background: url(../../images/dhd/down/c20.png);
+}
+
+#stargate .dhd .btn21:hover {
+    background: url(../../images/dhd/down/c21.png);
+}
+
+#stargate .dhd .btn22:hover {
+    background: url(../../images/dhd/down/c22.png);
+}
+
+#stargate .dhd .btn23:hover {
+    background: url(../../images/dhd/down/c23.png);
+}
+
+#stargate .dhd .btn24:hover {
+    background: url(../../images/dhd/down/c24.png);
+}
+
+#stargate .dhd .btn25:hover {
+    background: url(../../images/dhd/down/c25.png);
+}
+
+#stargate .dhd .btn26:hover {
+    background: url(../../images/dhd/down/c26.png);
+}
+
+#stargate .dhd .btn27:hover {
+    background: url(../../images/dhd/down/c27.png);
+}
+
+#stargate .dhd .btn28:hover {
+    background: url(../../images/dhd/down/c28.png);
+}
+
+#stargate .dhd .btn29:hover {
+    background: url(../../images/dhd/down/c29.png);
+}
+
+#stargate .dhd .btn30:hover {
+    background: url(../../images/dhd/down/c30.png);
+}
+
+#stargate .dhd .btn31:hover {
+    background: url(../../images/dhd/down/c31.png);
+}
+
+#stargate .dhd .btn32:hover {
+    background: url(../../images/dhd/down/c32.png);
+}
