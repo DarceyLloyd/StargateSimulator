@@ -1,0 +1,34 @@
+# OS generated files #
+######################
+vendor
+node_modules
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files #
+#############
+nbproject
+.nbproject
+.~lock.*
+.buildpath
+.idea
+.project
+.settings
+composer.lock
+.vs
+.vscode
+prepros-6.config
+package-lock.json
+
+
+# Misc #
+########
+.old
